@@ -84,6 +84,8 @@
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\clouds.cs" />
     <Compile Include="Assets\Scripts\testSpawner.cs" />
+    <Compile Include="Assets\SpawnPattern.cs" />
+    <Compile Include="Assets\SpawnPoint.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

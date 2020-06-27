@@ -6,6 +6,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public int damage = 1;
+    public bool onGround;
     public float speed;
     public GameObject effect;
 

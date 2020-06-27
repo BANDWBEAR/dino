@@ -121,5 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16d9ae171af384f7f93bdb98579fffeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  onGround: 1
   speed: 5
   effect: {fileID: 3223557304371423518, guid: dd5c1a4dfef5a4959a3528c07f10127f, type: 3}
