@@ -35,9 +35,14 @@ public class PlayerController : PhysicsObject
         healthBar.SetHealth(health);
         StartCoroutine(cameraShake.Shake(0.15f, 0.4f));
         Handheld.Vibrate();
+        if (health <= 0) {
+            Time.timeScale = 0.05f;
+        }
     }
 
+    private void death() {
 
+    }
 
     protected override void ComputeVelocity()
     {
@@ -61,7 +66,7 @@ public class PlayerController : PhysicsObject
             if (velocity.y > 0)
             {
                 velocity.y = velocity.y * .6f;
-                Debug.Log("TEST");
+                
             }
         }
         else if (Input.GetButtonUp("Crouch"))
