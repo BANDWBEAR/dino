@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9171495464396778052}
   - component: {fileID: 7339755304175571431}
   - component: {fileID: 8772352266350315857}
+  - component: {fileID: 7214448453338872480}
   m_Layer: 0
   m_Name: smallCactusDouble
   m_TagString: Untagged
@@ -125,3 +126,16 @@ MonoBehaviour:
   onGround: 1
   speed: 5
   effect: {fileID: 3223557304371423518, guid: dd5c1a4dfef5a4959a3528c07f10127f, type: 3}
+--- !u!114 &7214448453338872480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7811769205132056732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e064669a41b4640bd43d166c51901e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5

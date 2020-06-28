@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1399343264204438576}
   - component: {fileID: 1399343264204438583}
   - component: {fileID: 1399343264204438577}
+  - component: {fileID: 6511447846156327816}
   m_Layer: 0
   m_Name: pterodactel_0
   m_TagString: Untagged
@@ -146,3 +147,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.738153, y: 0.4118817}
   m_EdgeRadius: 0
+--- !u!114 &6511447846156327816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399343264204438540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e064669a41b4640bd43d166c51901e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5
