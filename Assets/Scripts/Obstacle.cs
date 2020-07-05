@@ -12,7 +12,8 @@ public class Obstacle : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        
+      transform.Translate(Vector2.left * (speed - 5 + Global.GroundMovementSpeed)* Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

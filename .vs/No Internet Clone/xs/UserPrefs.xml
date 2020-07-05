@@ -1,12 +1,18 @@
 ﻿<Properties StartupConfiguration="{8422A881-F33C-B9E7-6621-C6B42C044F04}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PhysicsObject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraShake.cs">
     <Files>
       <File FileName="Assets/Scripts/SpawnManager.cs" Line="61" Column="6" />
-      <File FileName="Assets/Scripts/Destroyer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Boundaries.cs" Line="5" Column="38" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="64" Column="17" />
-      <File FileName="Assets/Scripts/PauseMenuScript.cs" Line="38" Column="6" />
-      <File FileName="Assets/Scripts/PhysicsObject.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Destroyer.cs" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="79" Column="10" />
+      <File FileName="Assets/Scripts/PauseMenuScript.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Background.cs" Line="16" Column="62" />
+      <File FileName="Assets/Scripts/clouds.cs" Line="15" Column="10" />
+      <File FileName="Assets/Scripts/Obstacle.cs" Line="23" Column="10" />
+      <File FileName="Assets/Scripts/CameraShake.cs" Line="9" Column="29" />
+      <File FileName="Assets/Scripts/PhysicsObject.cs" Line="13" Column="19" NotebookId="1" />
+      <File FileName="Assets/Score.cs" Line="31" Column="46" NotebookId="1" />
+      <File FileName="Assets/Scripts/DeathMenu.cs" Line="10" Column="5" NotebookId="1" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="10" Column="78" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +20,7 @@
           <Node name="No Internet Clone" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PhysicsObject.cs" selected="True" />
+                <Node name="CameraShake.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -24,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b82f18a6-e739-4956-8b2d-5b589eb67310" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4d4cf475-3776-477b-b627-c242ef86c1f9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

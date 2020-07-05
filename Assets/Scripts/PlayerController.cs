@@ -14,6 +14,9 @@ public class PlayerController : PhysicsObject
     public Joystick joystick;
     public HealthBar healthBar;
     public CameraShake cameraShake;
+    public bool dead = false;
+
+    public GameObject deathMenu;
 
     //private bool jumpHold = false;
     //private bool crouchHold = false;
@@ -30,23 +33,31 @@ public class PlayerController : PhysicsObject
     }
 
 
-    public void takeDamage(int damage) {
+    public void takeDamage(int damage)
+    {
         health = health - damage;
         healthBar.SetHealth(health);
-        StartCoroutine(cameraShake.Shake(0.15f, 0.4f));
         Handheld.Vibrate();
-        if (health <= 0) {
-            Time.timeScale = 0.05f;
+        if (health <= 0)
+        {
+            death();
+        }
+        else
+        {
+            StartCoroutine(cameraShake.Shake(0.15f, 0.4f));
         }
     }
 
-    private void death() {
-
+    private void death()
+    {
+        Time.timeScale = 0.01f;
+        dead = true;
+        deathMenu.SetActive(true);
     }
 
     protected override void ComputeVelocity()
     {
-        
+
         float verticalMove = joystick.Vertical;
         Vector2 move = Vector2.zero;
         move.x = joystick.Horizontal;
@@ -63,10 +74,11 @@ public class PlayerController : PhysicsObject
         else if (verticalMove < 0.2f && verticalMove > -0.2f)
         {
             jump = false;
+            crouch = false;
             if (velocity.y > 0)
             {
                 velocity.y = velocity.y * .6f;
-                
+
             }
         }
         else if (Input.GetButtonUp("Crouch"))
@@ -75,57 +87,6 @@ public class PlayerController : PhysicsObject
         }
 
         WhatToDo();
-
-        //if (Input.GetButtonDown("Jump"))
-        //{
-        //    jumpHold = true;
-        //    if (grounded)
-        //    {
-        //        velocity.y = jumpTakeOffSpeed;
-
-        //    }
-        //}
-        //else if (Input.GetButtonUp("Jump"))
-        //{
-        //    jumpHold = false;
-        //    if (velocity.y > 0)
-        //    {
-        //        velocity.y = velocity.y * .6f;
-        //    }
-        //}
-        //else if (jumpHold && grounded)
-        //{
-        //    crouchHold = false;
-        //    velocity.y = jumpTakeOffSpeed;
-        //}
-
-
-
-        //if (Input.GetButtonDown("Crouch"))
-        //{
-        //    crouchHold = true;
-        //    if (grounded)
-        //    {
-        //        CrouchCollider.enabled = true;
-        //        StandCollider.enabled = false;
-        //        animator.SetBool("Crouch", crouchHold);
-
-        //    }
-        //}
-        //else if (Input.GetButtonUp("Crouch"))
-        //{
-        //    crouchHold = false;
-        //    CrouchCollider.enabled = false;
-        //    StandCollider.enabled = true;
-        //    animator.SetBool("Crouch", crouchHold);
-        //}
-        //else if (crouchHold && grounded)
-        //{
-        //    CrouchCollider.enabled = true;
-        //    StandCollider.enabled = false;
-        //    animator.SetBool("Crouch", crouchHold);
-
-        //}
 
         targetVelocity = move * maxSpeed;
     }

@@ -10,7 +10,7 @@ public class Background : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        transform.Translate(Vector2.left * Global.GroundMovementSpeed * Time.deltaTime);
         if (transform.position.x < Xend)
         {
             Vector2 pos = new Vector2(Xstart, transform.position.y);
