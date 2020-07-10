@@ -29,7 +29,6 @@ public class Score : MonoBehaviour
         if (ScoreCount >= TargetScore)
         {
             Global.GroundMovementSpeed += 0.1f;
-            Debug.Log("Gorund Speed" + Global.GroundMovementSpeed);
             TargetScore *= 1.1f;
         }
 

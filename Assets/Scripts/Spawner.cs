@@ -19,11 +19,9 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(obstacleTemplate.Length);
         if (timeBtwSpawns <= 0)
         {
             int rand = Random.Range(0, obstacleTemplate.Length);
-            Debug.Log(rand + " length" + obstacleTemplate.Length); 
             Instantiate(obstacleTemplate[rand], transform.position, Quaternion.identity);
             timeBtwSpawns = startTimeBtwSpawns;
             if (startTimeBtwSpawns > minTime)

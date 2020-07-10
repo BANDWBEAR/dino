@@ -18,7 +18,6 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("triggered");
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerController>().takeDamage(1);

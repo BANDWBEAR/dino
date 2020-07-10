@@ -14,6 +14,7 @@ public class DeathMenu : MonoBehaviour
         deathMenu.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Global.GroundMovementSpeed = 5f;
     }
 
     public void ExitToMenu()
@@ -21,5 +22,6 @@ public class DeathMenu : MonoBehaviour
         deathMenu.SetActive(false);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Global.GroundMovementSpeed = 5f;
     }
 }

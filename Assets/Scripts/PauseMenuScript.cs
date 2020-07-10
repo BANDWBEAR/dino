@@ -35,9 +35,11 @@ public class PauseMenuScript : MonoBehaviour
     public void ExitToMenu() {
         Resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        Global.GroundMovementSpeed = 5f;
     }
 
     public void Quit() {
+        Global.GroundMovementSpeed = 5f;
         Application.Quit();
     }
 

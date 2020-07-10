@@ -259,7 +259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132938314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalPosition: {x: 19.43, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 362203505}
@@ -495,6 +495,7 @@ MonoBehaviour:
   healthBar: {fileID: 696041855}
   cameraShake: {fileID: 519420030}
   dead: 0
+  deathMenu: {fileID: 720819256}
 --- !u!61 &172187970
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -825,6 +826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 172187969}
   ScoreText: {fileID: 200180009}
+  TargetScore: 10
   FinalScore: 0
 --- !u!1 &205090611
 GameObject:
@@ -2521,6 +2523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d071ddba9f6a4689b0565cd65115109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathMenu: {fileID: 720819256}
+  player: {fileID: 172187969}
 --- !u!1 &1157284614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2677,8 +2681,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1030351469}
-        m_MethodName: Quit
+      - m_Target: {fileID: 1030351470}
+        m_MethodName: Reload
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2859,7 +2863,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Quit
+  m_text: 'Try Again
 
 '
   m_isRightToLeft: 0
@@ -2930,10 +2934,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1493834710}
-    characterCount: 5
+    characterCount: 10
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 1
+    spaceCount: 2
+    wordCount: 2
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -3187,7 +3191,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1030351469}
+      - m_Target: {fileID: 1030351470}
         m_MethodName: ExitToMenu
         m_Mode: 1
         m_Arguments:
