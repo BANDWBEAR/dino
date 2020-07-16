@@ -35,9 +35,17 @@ public class PlayerController : PhysicsObject
 
     public void takeDamage(int damage)
     {
-        health = health - damage;
-        healthBar.SetHealth(health);
-        Handheld.Vibrate();
+        if (health >= 5 && damage > 0)
+        {
+            //do nothing
+        }
+        else
+        {
+            health = health + damage;
+            healthBar.SetHealth(health);
+            Handheld.Vibrate();
+        }
+
         if (health <= 0)
         {
             death();

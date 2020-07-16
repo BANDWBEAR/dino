@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public int damage = 1;
+    public int damage = -1;
     public bool onGround;
     public float speed;
     public GameObject effect;
@@ -20,7 +20,7 @@ public class Obstacle : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerController>().takeDamage(1);
+            collision.GetComponent<PlayerController>().takeDamage(damage);
             Instantiate(effect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

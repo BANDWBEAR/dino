@@ -6,6 +6,8 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public float TimeBetweenWaves = 2f;
+    public float minimumTimneBetweenWaves = 0.5f;
+    public float wavesTimeModifier = 0.01f;
     public float AltitudeModifier = 0.1f;
     public GameObject[] GroundEnemies;
     public GameObject[] FlyingEnemies;
@@ -36,7 +38,9 @@ public class SpawnManager : MonoBehaviour
             GetRandomObjectFor(pattern);
             pattern -= 1;
         } while (pattern > 0);
-
+        if (TimeBetweenWaves > minimumTimneBetweenWaves) {
+            TimeBetweenWaves -= wavesTimeModifier;
+        }
 
     }
 
