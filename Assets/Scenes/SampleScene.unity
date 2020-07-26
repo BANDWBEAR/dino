@@ -295,6 +295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeBetweenWaves: 2
+  minimumTimneBetweenWaves: 0.5
+  wavesTimeModifier: 0.01
   AltitudeModifier: 0.25
   GroundEnemies:
   - {fileID: 7811769205132056732, guid: 2e39478ee31544405bb90fac8137e662, type: 3}
@@ -302,6 +304,7 @@ MonoBehaviour:
   - {fileID: 7811769205132056732, guid: ba75709274ed54d5394588f2e91692df, type: 3}
   - {fileID: 7811769205132056732, guid: 83b71b1d99153440784cf7ccdb39d21f, type: 3}
   - {fileID: 7811769205132056732, guid: 3809925e36c5448e1b6b38b3abbb297a, type: 3}
+  - {fileID: 7811769205132056732, guid: f9e170d17ec7543d1800a353858c815c, type: 3}
   - {fileID: 7811769205132056732, guid: 1cab0047388f04ca4975c17bd543cc3a, type: 3}
   FlyingEnemies:
   - {fileID: 1399343264204438540, guid: 0ac3f26ad4e024fcd92fefa409fab776, type: 3}
