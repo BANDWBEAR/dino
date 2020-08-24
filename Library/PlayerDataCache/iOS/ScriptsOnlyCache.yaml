@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - DynamicJoystick
     - FixedJoystick
     - HealthBar
+    - MainMenu
     - Obstacle
     - ObstacleSpawn
     - PSBoundariesOrthographic
@@ -19,6 +20,8 @@ ScriptsOnlyBuild:
     - clouds
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    Unity.2D.Sprite.Editor.dll:
+    - UnityEditor.U2D.Sprites.SpriteEditorWindow
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -53,7 +56,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -67,6 +70,67 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11234}
+    - Class: 114
+      Script: {instanceID: 11266}
+    - Class: 114
+      Script: {instanceID: 12360}
+    - Class: 114
+      Script: {instanceID: 12422}
+    - Class: 114
+      Script: {instanceID: 13148}
+    - Class: 114
+      Script: {instanceID: 13366}
+    - Class: 114
+      Script: {instanceID: 13530}
+    - Class: 114
+      Script: {instanceID: 13548}
+    - Class: 114
+      Script: {instanceID: 13884}
+    - Class: 114
+      Script: {instanceID: 13998}
+    - Class: 114
+      Script: {instanceID: 14308}
+    - Class: 114
+      Script: {instanceID: 14494}
+    - Class: 114
+      Script: {instanceID: 14674}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SampleScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -82,8 +146,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 109
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11234}
     - Class: 114
@@ -98,8 +160,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12132}
     - Class: 114
       Script: {instanceID: 12360}
-    - Class: 114
-      Script: {instanceID: 12422}
     - Class: 114
       Script: {instanceID: 12686}
     - Class: 114
@@ -117,8 +177,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13530}
     - Class: 114
-      Script: {instanceID: 13548}
-    - Class: 114
       Script: {instanceID: 13582}
     - Class: 114
       Script: {instanceID: 13638}
@@ -135,16 +193,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14264}
     - Class: 114
-      Script: {instanceID: 14308}
-    - Class: 114
-      Script: {instanceID: 14494}
-    - Class: 114
       Script: {instanceID: 14674}
     - Class: 114
       Script: {instanceID: 14722}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -1097,5 +1149,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 9
   scenePathNames:
+  - Assets/Scenes/Menu.unity
   - Assets/Scenes/SampleScene.unity
   playerPath: /Users/bohdankovalenko/Desktop/testBuild
